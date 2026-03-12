@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8d5a666-add1-4408-a2cd-cdff7ce44ee4" name="Changes" comment="Step 2: Added Store stuff">
+    <list default="true" id="b8d5a666-add1-4408-a2cd-cdff7ce44ee4" name="Changes" comment="Step 3: Added the default product list and the store start dialogue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.py" beforeDir="false" afterPath="$PROJECT_DIR$/products.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +67,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.main.executor": "Run",
+    "Python.products.executor": "Run",
     "Python.store.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -100,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773315593822</updated>
-      <workItem from="1773315594868" duration="3586000" />
+      <workItem from="1773315594868" duration="10007000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -142,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773318802923</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Step 3: Added the default product list and the store start dialogue">
+      <option name="closed" value="true" />
+      <created>1773319334454</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773319334454</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,10 +185,12 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Step 1" />
     <MESSAGE value="Step 2: Added Store stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 2: Added Store stuff" />
+    <MESSAGE value="Step 3: Added the default product list and the store start dialogue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 3: Added the default product list and the store start dialogue" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BestBuy$store.coverage" NAME="store Coverage Results" MODIFIED="1773318729653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/BestBuy$main.coverage" NAME="main Coverage Results" MODIFIED="1773318758891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BestBuy$products.coverage" NAME="products Coverage Results" MODIFIED="1773325328335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BestBuy$main.coverage" NAME="main Coverage Results" MODIFIED="1773325475288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

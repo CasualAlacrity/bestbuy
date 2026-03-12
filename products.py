@@ -34,6 +34,7 @@ class Product:
 
     def show(self):
         # "MacBook Air M2, Price: 1450, Quantity: 100"
+        # I checked, and it seems that this function was not intended to return a value. Weird.
         print(self.name, "Price:", self.price, "Quantity:", self.quantity)
 
     def buy(self, quantity) -> float:
