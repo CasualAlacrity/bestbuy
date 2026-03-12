@@ -28,13 +28,6 @@ def display_products(store: Store):
         print(f"{i}. {product.name}, Price: ${product.price}, Quantity: {product.quantity}")
     print("-----")
 
-"""
-When you want to finish order, enter empty text.
-Which product # do you want? 1
-What amount do you want? 2
-Product added to list!
-Error adding product!
-"""
 def make_order(store:Store):
     cart = []
     display_products(store)
