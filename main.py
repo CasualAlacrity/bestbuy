@@ -8,19 +8,29 @@ product_list = [Product("MacBook Air M2", price=1450, quantity=100),
                 ]
 best_buy = Store(product_list)
 
+
 def start(store: Store):
     while True:
         show_main_menu()
-        option = int(input("Please choose a number:"))
+
+        try:
+            option = int(input("Please choose a number: "))
+        except ValueError:
+            print("Invalid input, please enter a number.")
+            continue
+
         if option == 1:
             display_products(store)
-        if option == 2:
+        elif option == 2:
             # A bit weird that the demo project doesn't use formatting here like in option 1
             print(f"Total of {store.get_total_quantity()} items in store.")
-        if option == 3:
+        elif option == 3:
             make_order(store)
-        if option == 4:
-            False
+        elif option == 4:
+            break
+        else:
+            print("Invalid choice.")
+
 
 def display_products(store: Store):
     print("-----")
@@ -28,15 +38,20 @@ def display_products(store: Store):
         print(f"{i}. {product.name}, Price: ${product.price}, Quantity: {product.quantity}")
     print("-----")
 
-def make_order(store:Store):
+
+def make_order(store: Store):
     cart = []
     display_products(store)
     print("When you want to finish order, enter empty text.")
 
     # Keep adding products until empty quantity
     while True:
-        product_id = input("Which product # do you want?")
-        quantity = input("What amount do you want?")
+        product_id = input("Which product # do you want? ")
+
+        if product_id == "":
+            break
+
+        quantity = input("What amount do you want? ")
 
         # Ordering is done.
         if quantity == "":
@@ -44,8 +59,9 @@ def make_order(store:Store):
 
         try:
             # Check that the product request wasn't nonsense
-            product = product_list[int(product_id) - 1]
-        except:
+            products = store.get_all_products()
+            product = products[int(product_id) - 1]
+        except ValueError:
             # Product is nonsesne, but the cart may still be value
             print("Error adding product!")
             break
@@ -55,9 +71,12 @@ def make_order(store:Store):
 
     # Ordering is done
     if cart:
-        total = store.order(cart)
-        if total > 0:
+        try:
+            total = store.order(cart)
             print(f"Order made! Total payment: ${total}")
+        except ValueError:
+            print("Order failed")
+
 
 def show_main_menu():
     # I didn't want to do this in a single print call
@@ -66,5 +85,6 @@ def show_main_menu():
     print("2. Show total amount in store")
     print("3. Make an order")
     print("4. Quit")
+
 
 start(best_buy)
